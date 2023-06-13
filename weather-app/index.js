@@ -12,7 +12,7 @@ async function getWeatherInfo() {
       },
     ]);
 
-    const apiKey = '2249ae619ff5422093a75913232905'; 
+    const apiKey = 'Enter_Your_API_Key_Here'; 
     const apiUrl = `http://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${cityName}&aqi=yes`;
 
     const response = await fetch(apiUrl);
