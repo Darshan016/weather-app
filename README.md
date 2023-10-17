@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset="UTF-8">
-<!--   <title>Weather App</title> -->
+  <title>Weather App</title>
 </head>
 <body>
   <h1>Weather App</h1>
@@ -24,12 +24,15 @@
     <pre><code>npm install</code></pre>
   </ol>
 
-  <h2>Usage</h2>
+  <h2>Running with Docker</h2>
+  <p>You can also run the Weather App in a Docker container to simplify the environment setup.</p>
   <ol>
-    <li>Run the application:</li>
-    <pre><code>weather-app</code></pre>
-    <li>Enter the name of the city for which you want to retrieve weather information when prompted.</li>
-    <li>The application will display the current temperature, current time, region name and country name for the specified city.</li>
+    <li>Make sure you have Docker installed on your system.</li>
+    <li>Build the Docker image:</li>
+    <pre><code>docker build -t weather-app .</code></pre>
+    <li>Run the Docker container:</li>
+    <pre><code>docker run -it weather-app</code></pre>
+    <li>Follow the prompts to enter the city name and retrieve weather information.</li>
   </ol>
 
   <h2>Acknowledgements</h2>
@@ -39,8 +42,6 @@
   </ul>
 
   <p>Feel free to modify and enhance the app as per your needs.</p>
-  <p> P.S: You will need your own API keys to run the application.<a href="https://www.weatherapi.com/"> Get API Keys here for free!</a> </p>
-
- 
+  <p>P.S: You will need your own API keys to run the application. <a href="https://www.weatherapi.com/">Get API Keys here for free!</a></p>
 </body>
 </html>
