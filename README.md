@@ -32,9 +32,6 @@
     <li>The application will display the current temperature, current time, region name and country name for the specified city.</li>
   </ol>
 
-  <h2>License</h2>
-  <p>This project is licensed under the <a href="LICENSE">MIT License</a>.</p>
-
   <h2>Acknowledgements</h2>
   <ul>
     <li><a href="https://www.weatherapi.com/">Weather API</a> for providing weather data.</li>
