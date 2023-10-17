@@ -1,5 +1,7 @@
 #!/usr/bin/env node
 const inquirer = require('inquirer');
+require('dotenv').config();
+
 
 async function getWeatherInfo() {
     const { default: fetch } = await import('node-fetch');
@@ -12,7 +14,7 @@ async function getWeatherInfo() {
       },
     ]);
 
-    const apiKey = 'Enter_Your_API_Key_Here'; 
+    const apiKey = process.env.API_KEY; 
     const apiUrl = `http://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${cityName}&aqi=yes`;
 
     const response = await fetch(apiUrl);
